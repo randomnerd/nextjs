@@ -20,7 +20,7 @@
     "prebuild": "rimraf dist",
     "prepublish": "npm run build",
     "postbuild": "rimraf dist/types",
-    "postinstall": "husky install",
+    "postinstall": "mkdir -p .git && husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
